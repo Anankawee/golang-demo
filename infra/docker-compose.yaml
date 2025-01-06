@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db-pg:
+    image: postgres:16
+    ports:
+      - 5432:5432
+    container_name: db-pg-golang-learning
+    volumes:
+      - db-data:/data/db
+    networks:
+      - golangLearningNetworks
+    environment:
+      - POSTGRES_DB=golangLearning
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=postgres
+volumes:
+  db-data:
+
+networks:
+  golangLearningNetworks:
+    driver: bridge
