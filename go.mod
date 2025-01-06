@@ -1,4 +1,4 @@
-module github.com/enersys/golang-workshop
+module github.com/few-enersys/golang-demo
 
 go 1.21.6
 
