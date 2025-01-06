@@ -1,6 +1,6 @@
 package pkg
 
-import "example/hello/pkg/calculate"
+import "github.com/enersys/golang-workshop/pkg/calculate"
 
 func test2() {
 
